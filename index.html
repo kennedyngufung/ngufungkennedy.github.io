@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Ngufung Kennedy | Software Engineer Portfolio</title>
+    <meta name="description" content="Professional portfolio of Ngufung Kennedy, a Software Engineering student specializing in scalable systems, secure APIs, and modern web applications.">
+    <meta name="keywords" content="Ngufung Kennedy, Software Engineer, Portfolio, Full-Stack Developer, Software Engineering Student">
+    <meta name="author" content="Ngufung Kennedy">
+    
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/606/606203.png">
+<link rel="icon" type="image/png" href="Gemini_Generated_Image_mprpczmprpczmprp.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #e5e7eb; overflow-x: hidden; }
+        .mono { font-family: 'JetBrains Mono', monospace; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        .accent-glow { text-shadow: 0 0 15px rgba(59, 130, 246, 0.5); }
+        .btn-glow:hover { box-shadow: 0 0 20px rgba(59, 130, 246, 0.4); }
+        
+        /* Typing cursor */
+        #typing::after { content: '|'; animation: blink 0.7s infinite; margin-left: 2px; }
+        @keyframes blink { 50% { opacity: 0; } }
+
+        /* Back to Top Button Visibility */
+        #back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+    </style>
+</head>
+<body class="scroll-smooth">
+
+    <nav class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center">
+      <div class="flex items-center mono font-black text-2xl tracking-tighter group">
+    <span class="text-blue-500 transform group-hover:-translate-x-1 transition-transform duration-300">{</span>
+    
+    <span class="text-white px-1 relative">
+        NK
+        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-blue-500 shadow-[0_0_8px_#3b82f6]"></span>
+    </span>
+    
+    <span class="text-blue-500 transform group-hover:translate-x-1 transition-transform duration-300">}</span>
+    
+    <span class="text-blue-400/80 text-sm ml-1 font-light opacity-0 group-hover:opacity-100 transition-opacity">.DEV</span>
+</div>
+        
+        <div class="hidden md:flex space-x-8 text-sm uppercase tracking-widest font-medium">
+            <a href="#about" class="hover:text-blue-400 transition">About</a>
+            <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+            <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+            <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+        </div>
+
+        <button id="menu-btn" class="md:hidden text-blue-500 focus:outline-none">
+            <i data-lucide="menu"></i>
+        </button>
+    </nav>
+
+    <div id="mobile-menu" class="fixed top-[64px] left-0 w-full hidden flex-col items-center space-y-6 py-8 glass md:hidden z-40 transition-all duration-300">
+        <a href="#about" class="hover:text-blue-400 text-lg">About</a>
+        <a href="#skills" class="hover:text-blue-400 text-lg">Skills</a>
+        <a href="#projects" class="hover:text-blue-400 text-lg">Projects</a>
+        <a href="#contact" class="hover:text-blue-400 text-lg">Contact</a>
+    </div>
+
+    <section class="min-h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+        <div data-aos="fade-down" class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-widest text-blue-400 uppercase bg-blue-400/10 rounded-full">
+            Available for Internships & Projects
+        </div>
+        <h1 data-aos="zoom-in" data-aos-delay="200" class="text-5xl md:text-7xl font-bold mb-4 tracking-tight">
+            NGUFUNG <span class="text-blue-500 accent-glow">KENNEDY</span>
+        </h1>
+        
+        <p data-aos="fade-up" data-aos-delay="400" class="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl font-light h-8">
+            I build <span id="typing" class="text-blue-500 font-semibold"></span>
+        </p>
+
+        <div data-aos="fade-up" data-aos-delay="600" class="flex flex-col md:flex-row gap-4 mt-4">
+            <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition btn-glow">View Projects</a>
+            <a href="#contact" class="border border-gray-700 hover:border-blue-500 px-8 py-3 rounded-lg font-semibold transition">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-right">
+                <h2 class="text-3xl font-bold mb-6 flex items-center gap-3">
+                    <i data-lucide="user" class="text-blue-500"></i> About Me
+                </h2>
+                <p class="text-gray-400 leading-relaxed mb-4">
+                    I am a Software Engineering student driven by the challenge of turning complex problems into high-performance code. My journey is rooted in a deep curiosity for how systems work under the hood.
+                </p>
+                <p class="text-gray-400 leading-relaxed">
+                    I focus on <strong>Software Architecture</strong> and <strong>Security</strong>. I believe modern engineering isn't just about functionality—it's about building systems that last.
+                </p>
+            </div>
+            <div data-aos="fade-left" class="glass p-8 rounded-2xl border-l-4 border-blue-500">
+                <h3 class="mono text-blue-400 mb-4">Education</h3>
+                <p class="font-bold text-lg">B.Sc. Software Engineering</p>
+                <p class="text-sm text-gray-500 mb-4 font-semibold uppercase tracking-wide">LANDMARK METROPOLITANT UNIVERSITY</p>
+                <ul class="text-sm space-y-2 text-gray-400">
+                    <li>• Data Structures & Algorithms</li>
+                    <li>• Cloud Infrastructure</li>
+                    <li>• Database Systems</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-24 bg-[#0d0d0d]">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 data-aos="fade-up" class="text-3xl font-bold mb-12 text-center">Tech Stack</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div data-aos="flip-left" data-aos-delay="100" class="glass p-6 rounded-xl hover:border-blue-500/50 transition group">
+                    <i data-lucide="code-2" class="mb-4 text-blue-500 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold mb-2">Languages</h3>
+                    <p class="text-xs text-gray-500 mono">Python, Java, JS, C++</p>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="200" class="glass p-6 rounded-xl hover:border-blue-500/50 transition group">
+                    <i data-lucide="layers" class="mb-4 text-blue-500 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold mb-2">Frameworks</h3>
+                    <p class="text-xs text-gray-500 mono">React, Node, Django</p>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="300" class="glass p-6 rounded-xl hover:border-blue-500/50 transition group">
+                    <i data-lucide="database" class="mb-4 text-blue-500 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold mb-2">Databases</h3>
+                    <p class="text-xs text-gray-500 mono">PostgreSQL, MongoDB</p>
+                </div>
+                <div data-aos="flip-left" data-aos-delay="400" class="glass p-6 rounded-xl hover:border-blue-500/50 transition group">
+                    <i data-lucide="terminal" class="mb-4 text-blue-500 group-hover:scale-110 transition"></i>
+                    <h3 class="font-bold mb-2">Tools</h3>
+                    <p class="text-xs text-gray-500 mono">Docker, Git, AWS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6 max-w-6xl mx-auto">
+        <h2 data-aos="fade-right" class="text-3xl font-bold mb-12 flex items-center gap-3">
+            <i data-lucide="cpu" class="text-blue-500"></i> Featured Projects
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div data-aos="fade-up" data-aos-delay="100" class="glass rounded-2xl overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)]">
+                <div class="h-48 bg-gradient-to-br from-blue-900/40 to-black flex items-center justify-center">
+                    <i data-lucide="shield-check" class="w-16 h-16 text-blue-500 opacity-50"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 italic">SecureVault API</h3>
+                    <p class="text-gray-400 text-sm mb-4">RESTful API using AES-256 encryption for secure enterprise data handling.</p>
+                    <div class="flex justify-between items-center text-sm font-semibold mt-4">
+                        <a href="#" class="text-blue-500 hover:underline">View Code</a>
+                        <a href="#" class="flex items-center gap-1 hover:text-blue-400">Live Demo <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="200" class="glass rounded-2xl overflow-hidden border-t-2 border-blue-500/30 transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)]">
+                <div class="h-48 bg-gradient-to-br from-gray-900 to-blue-900/20 flex items-center justify-center">
+                    <i data-lucide="brain-circuit" class="w-16 h-16 text-blue-500 opacity-50"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 italic">NeuroFlow</h3>
+                    <p class="text-gray-400 text-sm mb-4">AI task prioritizer that uses machine learning to optimize dev workflows.</p>
+                    <div class="flex justify-between items-center text-sm font-semibold mt-4">
+                        <a href="#" class="text-blue-500 hover:underline">View Code</a>
+                        <a href="#" class="flex items-center gap-1 hover:text-blue-400">Live Demo <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-delay="300" class="glass rounded-2xl overflow-hidden transition-all duration-300 transform hover:-translate-y-2 hover:scale-[1.02] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)]">
+                <div class="h-48 bg-gradient-to-br from-black to-blue-900/30 flex items-center justify-center">
+                    <i data-lucide="activity" class="w-16 h-16 text-blue-500 opacity-50"></i>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-2 italic">CloudMetric</h3>
+                    <p class="text-gray-400 text-sm mb-4">Real-time server monitoring dashboard with instant socket alerts.</p>
+                    <div class="flex justify-between items-center text-sm font-semibold mt-4">
+                        <a href="#" class="text-blue-500 hover:underline">View Code</a>
+                        <a href="#" class="flex items-center gap-1 hover:text-blue-400">Live Demo <i data-lucide="external-link" class="w-4 h-4"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-24 px-6">
+        <div data-aos="zoom-in" class="max-w-3xl mx-auto glass p-10 rounded-3xl">
+            <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
+            <form id="contact-form" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" name="name" placeholder="Name" class="w-full bg-white/5 border border-white/10 p-3 rounded-lg focus:outline-none focus:border-blue-500" required>
+                    <input type="email" name="email" placeholder="Email" class="w-full bg-white/5 border border-white/10 p-3 rounded-lg focus:outline-none focus:border-blue-500" required>
+                </div>
+                <input type="text" name="title" placeholder="Subject" class="w-full bg-white/5 border border-white/10 p-3 rounded-lg focus:outline-none focus:border-blue-500" required>
+                
+                <textarea name="message" rows="4" placeholder="Message" class="w-full bg-white/5 border border-white/10 p-3 rounded-lg focus:outline-none focus:border-blue-500" required></textarea>
+                <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 py-3 rounded-lg font-bold transition btn-glow">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-blue-600 p-3 rounded-full shadow-lg opacity-0 pointer-events-none transform translate-y-10 transition-all duration-300 z-50 hover:bg-blue-700">
+        <i data-lucide="arrow-up" class="text-white"></i>
+    </button>
+
+    <footer class="py-10 text-center text-gray-600 text-sm mono">
+    <div class="flex justify-center gap-6 mb-4">
+        <a href="https://github.com/YOUR_USERNAME" class="hover:text-blue-500 transition-colors">
+            <i data-lucide="github" class="w-5 h-5"></i>
+        </a>
+        <a href="#" class="hover:text-blue-500 transition-colors">
+            <i data-lucide="linkedin" class="w-5 h-5"></i>
+        </a>
+    </div>
+    &copy; 2026 NGUFUNG KENNEDY // BUILT FOR THE FUTURE
+</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script>
+        // 2. EmailJS Initialization
+        (function(){
+            emailjs.init("cNtpD4H9yONn1eQ63");
+        })();
+
+        // Mobile Menu Toggle
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+            menu.classList.toggle("flex");
+        });
+
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+            });
+        });
+
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-quad'
+        });
+
+        // 3. FIXED Typing Animation (with pauses)
+        const words = ["Scalable Systems.", "Secure APIs.", "Modern Web Apps.", "Digital Experiences."];
+        let i = 0, j = 0, currentWord = "", isDeleting = false;
+
+        function type() {
+            currentWord = words[i];
+            
+            if (isDeleting) {
+                document.getElementById("typing").textContent = currentWord.substring(0, j--);
+                if (j < 0) {
+                    isDeleting = false;
+                    i = (i + 1) % words.length;
+                    setTimeout(type, 500); // Wait 0.5s before typing next word
+                } else {
+                    setTimeout(type, 50);
+                }
+            } else {
+                document.getElementById("typing").textContent = currentWord.substring(0, j++);
+                if (j > currentWord.length) {
+                    isDeleting = true;
+                    setTimeout(type, 2000); // PAUSE 2 SECONDS HERE
+                } else {
+                    setTimeout(type, 100);
+                }
+            }
+        }
+        type();
+
+        // Back to Top Button
+        const backToTop = document.getElementById("back-to-top");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 500) {
+                backToTop.classList.add("visible");
+            } else {
+                backToTop.classList.remove("visible");
+            }
+        });
+        backToTop.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        // 4. Contact Form Handler
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            const btn = this.querySelector('button');
+            const originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+
+            // Send form using EmailJS
+            // Note: You need to create an EmailJS Service and Template to fully enable this.
+            // Replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' with actual values from EmailJS dashboard.
+            // For now, this just logs success to console.
+            emailjs.sendForm('service_2b7lv3y', 'template_1e5m71h', this)
+                .then(function() {
+                    btn.textContent = 'Message Sent!';
+                    btn.classList.add('bg-green-600');
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.classList.remove('bg-green-600');
+                        btn.disabled = false;
+                        document.getElementById('contact-form').reset();
+                    }, 3000);
+                }, function(error) {
+                    console.log('FAILED...', error);
+                    btn.textContent = 'Error. Try Again.';
+                    btn.classList.add('bg-red-600');
+                    setTimeout(() => {
+                        btn.textContent = originalText;
+                        btn.classList.remove('bg-red-600');
+                        btn.disabled = false;
+                    }, 3000);
+                });
+        });
+    </script>
+</body>
+</html>
